@@ -1,1 +1,10 @@
 dotnet tool update --global dotnet-ef
+
+create certificate using below link app for https
+https://slproweb.com/products/Win32OpenSSL.html
+openssl req -x509 -newkey rsa:2048 -nodes -keyout domain.key -out domain.csr
+
+add this to angular.json 
+
+export certificate after running app and install.(place in trusted authority center)
+--if certiticate is not resolved, https://medium.com/@richardr39/using-angular-cli-to-serve-over-https-locally-70dab07417c8
